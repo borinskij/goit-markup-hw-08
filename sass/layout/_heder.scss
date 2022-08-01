@@ -1,11 +1,24 @@
 .header{
     & .container {
             box-sizing: border-box;
-            width: var(--box-sizing);
             display: flex;
             /* height: 80px; */
             align-items: center;
             margin: auto;
+
+@media screen and (max-width: 767px) {
+        width: 480px;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+@media screen and (min-width: 768px) {
+    width: 768px;
+
+}
+@media screen and (min-width: 1200px) {
+    width: 1200px;
+}
         }
     &__nav {
         display: flex;
@@ -18,7 +31,29 @@
             gap: 50px;
             margin-left: auto;
             align-items: center;
-        }
+
+@media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+&__button {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+@media screen and(min-width: 768px) {
+        display: none;
+    }
+    
+}
+   &__button svg:hover, &__button:focus  svg{
+    fill: #2196f3;
+   }
+    
     &__item .nav {
         color: var(--title-text-color);
         font-size: 14px;
