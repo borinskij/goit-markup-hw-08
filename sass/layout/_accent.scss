@@ -1,0 +1,48 @@
+.accent {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+// & .container {
+//         width: var(--box-sizing);
+//         margin: auto;
+//         padding-left: 15px;
+//         padding-right: 15px;
+        
+//     }
+
+&__card {
+    display: flex;
+    justify-content: space-between;
+}
+
+&__text {
+    width: 270px;
+    height: 101px;
+}
+&__box {
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+&__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+&__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    box-sizing: border-box;
+    width: 270px;
+}
+}
