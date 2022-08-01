@@ -250,6 +250,14 @@ address {
   background-repeat: no-repeat;
   margin: auto;
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    width: 480px;
+    justify-content: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
 .hero__title, .hero__button {
   color: #ffffff;
   /* color: #1fda9b; */
@@ -263,6 +271,17 @@ address {
   letter-spacing: 0.06em;
   margin: auto;
   padding-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .hero__title {
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 .hero__button {
   /* width: 200px;
