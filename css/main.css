@@ -309,13 +309,21 @@ address {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 480px) {
+  .accent {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .accent__card {
   display: flex;
   justify-content: space-between;
 }
-.accent__text {
-  width: 270px;
-  height: 101px;
+@media screen and (min-width: 480px) {
+  .accent__card {
+    width: 480px;
+    flex-direction: column;
+  }
 }
 .accent__box {
   width: 270px;
@@ -325,6 +333,13 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .accent__box {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .accent__title {
   color: var(--title-text-color);
@@ -342,6 +357,12 @@ address {
   letter-spacing: 0.03em;
   box-sizing: border-box;
   width: 270px;
+}
+@media screen and (min-width: 480px) {
+  .accent__text {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .about {

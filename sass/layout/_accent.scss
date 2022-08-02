@@ -2,23 +2,30 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-// & .container {
-//         width: var(--box-sizing);
-//         margin: auto;
-//         padding-left: 15px;
-//         padding-right: 15px;
-        
-//     }
+@media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;}
+
 
 &__card {
     display: flex;
     justify-content: space-between;
+    // & .container {
+        //         width: var(--box-sizing);
+        //         margin: auto;
+        //         padding-left: 15px;
+        //         padding-right: 15px;
+    
+        //     }
+@media screen and (min-width: 480px) {
+    width: 480px;
+    flex-direction: column;
+
+
+    }
 }
 
-&__text {
-    width: 270px;
-    height: 101px;
-}
+
 &__box {
     width: 270px;
     height: 120px;
@@ -27,6 +34,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+@media screen and (min-width: 480px) {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+        }
 }
 &__title {
     color: var(--title-text-color);
@@ -44,5 +57,10 @@
     letter-spacing: 0.03em;
     box-sizing: border-box;
     width: 270px;
+@media screen and (min-width: 480px) {
+        width: 100%;
+        text-align: center;
+    
+    }
 }
 }
