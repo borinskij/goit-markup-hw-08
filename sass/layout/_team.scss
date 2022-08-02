@@ -1,14 +1,14 @@
 .team {
-    padding-top: 94px;
+    padding-top: 60px;
     background: #f5f4fa;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
 
-    // & .container {
-    //         width: var(--box-sizing);
-    //         margin: auto;
-    //         padding-left: 15px;
-    //         padding-right: 15px;
-    //     }
+    & .container {
+            width: 100%;
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
 &__title-top {
     color: var(--title-text-color);
     font-weight: 700;
@@ -17,7 +17,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     box-sizing: border-box;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 @media screen and (min-width: 768px) {
     font-size: 28px;
 }
@@ -28,7 +28,7 @@
 }
 
 &__card {
-    width: 270px;
+    max-width: 450px;
     height: auto;
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;

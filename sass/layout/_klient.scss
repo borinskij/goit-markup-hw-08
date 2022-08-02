@@ -1,7 +1,11 @@
 .klient {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
+// & .container{
+// @media screen and (min-width: 480px) {
+//     max-width: 480px;
+// }}
 
     &__title {
         color: var(--title-text-color);
@@ -17,6 +21,16 @@
         justify-content: space-between;
         margin-top: 50px;
     }
+
+&__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    @media screen and (min-width: 480px) {
+         max-width: 480px;
+        }
+}
     &__cart {
         box-sizing: border-box;
         width: 170px;
@@ -30,6 +44,8 @@
         transition-property: border-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        
     }
     &__icon {
         width: 106px;

@@ -5,9 +5,10 @@
             /* height: 80px; */
             align-items: center;
             margin: auto;
+            width: 100%;
 
 @media screen and (max-width: 767px) {
-        width: 480px;
+        max-width: 480px;
         justify-content: space-between;
         padding-top: 10px;
         padding-bottom: 10px;
