@@ -309,7 +309,7 @@ address {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .accent {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -319,10 +319,12 @@ address {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .accent__card {
-    width: 480px;
+    width: 100%;
+    text-align: center;
     flex-direction: column;
+    gap: 30px;
   }
 }
 .accent__box {
@@ -334,11 +336,10 @@ address {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .accent__box {
     width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
   }
 }
 .accent__title {
@@ -358,7 +359,7 @@ address {
   box-sizing: border-box;
   width: 270px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .accent__text {
     width: 100%;
     text-align: center;
