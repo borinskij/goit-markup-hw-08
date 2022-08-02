@@ -18,6 +18,11 @@
     letter-spacing: 0.03em;
     box-sizing: border-box;
     margin-bottom: 50px;
+@media screen and (min-width: 768px) {
+    font-size: 28px;
+}
+
+
     //  outline: 2px solid red;
     /* margin-bottom: 50px; */
 }
@@ -32,6 +37,7 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+
 }
 &__name {
     padding-top: 30px;
@@ -64,6 +70,9 @@
     justify-content: center;
     gap: 30px;
     padding: 0px;
+@media screen and (max-width: 1199px) {
+            width: 100%;
+        }
 }
 &__cart {
     width: 44px;

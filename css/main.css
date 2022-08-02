@@ -405,6 +405,11 @@ address {
   padding: 27px;
   bottom: 0;
 }
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
 
 .team {
   padding-top: 94px;
@@ -421,6 +426,11 @@ address {
   box-sizing: border-box;
   margin-bottom: 50px;
   /* margin-bottom: 50px; */
+}
+@media screen and (min-width: 768px) {
+  .team__title-top {
+    font-size: 28px;
+  }
 }
 .team__card {
   width: 270px;
@@ -462,6 +472,11 @@ address {
   justify-content: center;
   gap: 30px;
   padding: 0px;
+}
+@media screen and (max-width: 1199px) {
+  .team__list {
+    width: 100%;
+  }
 }
 .team__cart {
   width: 44px;
