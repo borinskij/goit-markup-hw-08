@@ -3,18 +3,27 @@
     padding-bottom: 200px;
     background-color: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../image/hero.jpeg);
+        url('../image/hero-480.jpg');
     max-width: 1600px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     margin: auto;
-
-    @media screen and (max-width: 767px) {
+    
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../image/hero-480@2x.jpg');
+  }
+@media screen and (max-width: 767px) {
         max-width: 480px;
         justify-content: center;
         padding-top: 118px;
        padding-bottom: 118px;
       }
+
+
+    
 
 
 
