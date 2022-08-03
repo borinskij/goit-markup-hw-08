@@ -15,8 +15,8 @@
 
 .modal {
     position: absolute;
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -147,18 +147,18 @@
     &__check {
         color: var(--primary-text-color);
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         display: flex;
         align-items: center;
         /* justify-items: center; */
-        margin-left: 13px;
+        // margin-left: 13px;
     }
 
     &__check a {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         text-decoration-line: underline;
