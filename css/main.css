@@ -387,6 +387,7 @@ address {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-768.jpg");
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -394,9 +395,17 @@ address {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-768@2x.jpg");
   }
 }
-@media screen and (min-width: 768px) {
-  .hero .heder.container {
-    max-width: 768px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-1600.jpg");
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-1600@2x.jpg");
   }
 }
 .hero__title, .hero__button {
@@ -416,9 +425,17 @@ address {
 @media screen and (max-width: 767px) {
   .hero__title {
     max-width: 360px;
+    font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
   }
 }
 .hero__button {
@@ -453,16 +470,6 @@ address {
     padding-bottom: 60px;
   }
 }
-.accent .container {
-  max-width: 768;
-}
-@media screen and (min-width: 768px) {
-  .accent .container {
-    max-width: 768px;
-    margin: auto;
-    padding: 0;
-  }
-}
 .accent__card {
   display: flex;
   justify-content: space-between;
@@ -475,13 +482,8 @@ address {
     gap: 30px;
   }
 }
-@media screen and (min-width: 768px) {
-  .accent__card {
-    max-width: 354px;
-    gap: 10px;
-  }
-}
 .accent__box {
+  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -492,13 +494,7 @@ address {
 @media screen and (max-width: 768px) {
   .accent__box {
     width: 100%;
-    text-align: justify;
-  }
-}
-@media screen and (max-width: 768px) {
-  .accent__box {
-    max-width: 354px;
-    flex-wrap: wrap;
+    text-align: center;
   }
 }
 .accent__title {
@@ -519,14 +515,9 @@ address {
   box-sizing: border-box;
   width: 270px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .accent__text {
     width: 100%;
-    text-align: justify;
-  }
-}
-@media screen and (min-width: 768px) {
-  .accent__text {
     text-align: justify;
   }
 }
