@@ -60,13 +60,52 @@
             </a>
           </li>
         </ul>
-        <button class="header__button" type="button">
+        <button class="header__button" type="button" data-burger-open>
           <svg widht="40px" height="40px">
             <use href="./image/symbol-defs-hover.svg#icon-menu_40px"></use>
           </svg>
         </button>
       </div>
-    </header>
+      </div>
+
+
+    <div class="burger is-hidden" data->
+
+      <div class="big__burger">
+
+        <div class="burger__container">
+        <button type="button" data-burger-close class="burger__close"> <svg width="40" height="40" >
+          <use href="./image/symbol-defs-hover.svg#icon-close_40px""></use>
+        </svg></button>
+        <nav class="burger__nav">
+          <ul class="burger__list">
+            <li class="burger__item"><a href="./index.html">Студия</a></li>
+            <li class="burger__item"><a href="./portfolio.html">Портфолио</a></li>
+            <li class="burger__item"><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        </div>
+        <div>
+        <div class="burger__connect">
+          <ul class=" list__connect">
+            <li class="burger__tel"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="burger__email"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+        </div>
+
+        <div class="burger__soc">
+          <ul class="burger__list-soc"><a href=""></a></ul>
+          <li class="burger__icon i"><a href="">Instagram</a></li>
+          <li class="burger__icon"><a href="">Twitter</a></li>
+          <li class="burger__icon"><a href="">Facebook</a></li>
+          <li class="burger__icon l"><a href="">LinkedIn</a></li>
+        </div>
+</div>
+      </div>
+
+    </div>
+
+  </header>
 
     <!-- =========================body================= -->
 
@@ -590,5 +629,7 @@
     </div> -->
     <!-- <script src="./js/modal.js"></script> -->
     <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+
   </body>
 </html>
